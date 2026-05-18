@@ -4,7 +4,7 @@ import { Logo } from "./Logo";
 
 export function Onboarding({ onStart }: { onStart: () => void }) {
   return (
-    <div style={{ position: "relative", minHeight: "100vh", minHeight: "100dvh", overflow: "hidden" }}>
+    <div className="full-height" style={{ position: "relative", overflow: "hidden" }}>
       {/* Background layers */}
       <div style={{
         position: "absolute",
@@ -27,10 +27,8 @@ export function Onboarding({ onStart }: { onStart: () => void }) {
         background: "radial-gradient(ellipse 100% 100% at 50% 50%, transparent 30%, rgba(0,0,0,0.5) 100%)",
       }} />
 
-      <div style={{
+      <div className="full-height" style={{
         position: "relative",
-        minHeight: "100vh",
-        minHeight: "100dvh",
         display: "flex",
         flexDirection: "column",
         padding: "40px 32px 36px",
